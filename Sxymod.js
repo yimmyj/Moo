@@ -162,7 +162,7 @@ function socketFound(socket){
 
 function handleMessage(m){
 
-          if (isEnemyNear == true && healToggle == 2){
+          if (isEnemyNear == true && healToggle == 2){ //Within range instakill
                doNewSend(["6", [4]]);
                doNewSend(["6", [15]]);
               healToggle = 1;
@@ -367,7 +367,7 @@ const healer = repeater(51, () => {place(foodType)}, 0);
 const boostPlacer = repeater(55, () => {place(boostType)
                                        place(boostType)
                                        place(boostType)}, 0);
-const millPlacer = repeater(7458, threeMill, 0);
+const millPlacer = repeater(7458, threeMill, 0); //set key when screwing around
 const minePlacer = repeater(72, () => {place(mineType)}, 0);
 const boostSpiker = repeater(71, boostSpike, 0);
 const spikePlacer = repeater(53, () => {place(spikeType)
@@ -432,7 +432,7 @@ document.addEventListener('keydown', (e)=>{
    //    setInterval( () => {
     //        doNewSend(["ch", [arr[index++]], index = index % arr.length], talkSpeed);}
 //
-     //  }
+     //  } //Testing autochat
 
 
     if(e.keyCode == 77 && document.activeElement.id.toLowerCase() !== 'chatbox') {
@@ -496,7 +496,7 @@ document.addEventListener('keydown', (e)=>{
     }
 
 
-    if(e.keyCode == 86 && document.activeElement.id.toLowerCase() !== 'chatbox') { //v for ageup
+    if(e.keyCode == 86 && document.activeElement.id.toLowerCase() !== 'chatbox') { //v for ageup: working on accuracy
         //autoaim = true;
         //doNewSend(["5", [primary, true]]);
         //doNewSend(["13c", [0, 7, 0]]);
@@ -516,6 +516,7 @@ document.addEventListener('keydown', (e)=>{
           // doNewSend(["ch", [" "]]);
     }
 
+	//hat macros: doesn't trigger when chat is open
      if (e.keyCode == 89 && document.activeElement.id.toLowerCase() !== 'chatbox') {
         doNewSend(["13c", [0, 6, 0]]);
 
