@@ -1,4 +1,4 @@
-/*
+
 var songString;
 let spaceIndex = 0;
 counterBox = 0;
@@ -259,4 +259,4 @@ We got lots of dough boy`;
     }
 counterBox = spaceIndex;
 }, 2300);
-*/
+
