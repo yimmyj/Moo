@@ -5,7 +5,7 @@ counterBox = 0;
 setInterval(() => {
     if(messageToggle == 0) {
 
-        let songString = `More than just a dream More than just a dream Forty days and forty nights
+        let songString = `More than just a dream More than just a dream Forty days and forty nights //
  I waited for a girl like you to come and save my life
  All the days I waited for you
  You know the ones who said I'd never find someone like you
